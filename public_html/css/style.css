@@ -1,0 +1,22 @@
+#body-config {
+    background-color:#eeeeee;
+    /*margin-left: 400px; */
+    margin-top: 10px;
+}
+
+
+
+
+
+#link-control {
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.col-centrar{
+    
+    float: none !important;
+    margin: 0 auto;
+    
+}
