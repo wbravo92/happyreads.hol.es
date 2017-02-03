@@ -1,6 +1,4 @@
-<?php require_once("inc/head.inc")?>
-  
-    
+<?php require_once("inc/head.inc");?>
     
 <body id="body-config">
 
@@ -31,9 +29,11 @@
      
       </form>
       
-<?php   
-  include("config.php");
+<?php 
+        
+include("config.php");
 include("database.php");
+
 
 $c=new database(host,user,pass,db,port);
 
@@ -48,7 +48,7 @@ while($row=$resultado->fetch_array(MYSQLI_NUM)){
 };
 
 */
-    
+  
 if($_POST){
     
 $correo=$_POST["correo"];
@@ -57,9 +57,19 @@ $contrasena=$_POST["contrasena"];
 
 $boolean=$c->existeUsuario($correo,$contrasena);
 
-if($boolean==true){
+if($boolean!=false){
+    
+  $array=$c->obtenerNombre($correo);  
 
 echo "El correo existe";
+    
+ require("session.php");
+    
+    
+    $_SESSION['correo']=$correo;
+    $_SESSION['nombre']=$array["nombre"];
+    $_SESSION['tipo']=$array["tipo"];
+    
     header("Location: panel_config.php");
 
 }else{
@@ -73,13 +83,11 @@ El correo No existe
 ";   
 
 }
-    
   $c->cerrarConexion();  
 }
 
 ?>    
       
-
     </div> 
 
  

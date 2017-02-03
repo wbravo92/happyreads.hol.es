@@ -12,5 +12,17 @@
     <title>HappyBooks</title>
 
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+    
+<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+
+
+
     </head>
+    
+<body style="margin-top:5%">
+
+
+
+
   

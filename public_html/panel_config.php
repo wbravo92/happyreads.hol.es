@@ -1,29 +1,32 @@
-<?php
-
-
-
-
-?>
-
-
-
-
 <html>
    
-   <style>
+<style>
+
+body{
+
+  background-image: url(Imagenes/Libro.jpg);
+}
+
+</style>
+   
     
-       body{
-           
-           background-image: url(Imagenes/Libro.jpg);
-       }
-    
-    </style>
-    
-    
-    <body style="">
-        
-    
-        
-    </body>
-    
-</html>
+<?php
+
+include("inc/head.inc");
+include("session.php");
+include("inc/navbarConfig.inc");
+                        
+?>
+         
+
+   
+      
+
+       
+       
+ <?php       
+    include("inc/footer.inc");
+   ?> 
+
+
+
