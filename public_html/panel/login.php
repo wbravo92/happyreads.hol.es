@@ -25,14 +25,14 @@
         </div>
         <button class="btn btn-lg btn-default btn-block" type="submit">Ingresar</button>
      
-     <a id="link-control" class="pull-right" href="index.html">Regresar</a>
+     <a id="link-control" class="pull-right" href="../index.html">Regresar</a>
      
       </form>
       
 <?php 
         
-include("config.php");
-include("database.php");
+include("../config.php");
+include("../database.php");
 
 
 $c=new database(host,user,pass,db,port);

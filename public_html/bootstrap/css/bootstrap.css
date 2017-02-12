@@ -2630,7 +2630,7 @@ input[type="search"] {
   }
 }
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .radio,
 .checkbox {
@@ -6756,3 +6756,8 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+#titulopanel {
+    margin-top:70px;
+    text-align:center;
+}

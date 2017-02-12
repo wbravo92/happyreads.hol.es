@@ -1,4 +1,3 @@
-
  <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -8,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">HappyReads</a>
+          <a class="navbar-brand" href="../index.html">HappyReads</a>
         </div>
         <div id="navbar" class=" navbar-collapse">
        
@@ -47,7 +46,27 @@
             </div>
             
             <div class="modal-body">
-                <a href="usuarios.php">Panel de usuarios</a>
+            
+            <?php
+            
+            if($_SESSION['tipo']=='Maestro' || $_SESSION['tipo']=='Administrador'){
+            
+            echo " <a style='display:block' href='usuarios.php'>Panel de usuarios</a>";
+             echo " <a style='display:block' href='#'>Agregar Autores</a>";
+             echo " <a style='display:block' href='#'>Agregar Libros</a>";
+            }else{
+        
+              echo "
+              <div>
+              <a style='display:block;color:gray' href='#'>Panel de usuarios</a>
+              <a style='display:block' href='#'>Agregar Autores</a>
+              <a style='display:block' href='#'>Agregar Libros</a>
+            </div>" ;
+            
+            }
+            
+            ?>
+               
             
             </div>
             
